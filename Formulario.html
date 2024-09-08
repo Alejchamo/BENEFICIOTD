@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Diseño.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form class="form-register" action="procesar.php" method="post">
+        <h4>Formulario de Registro</h4>
+        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+        <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña">
+        <input class="controls" type="password" name="confirm_password" id="confirm_password" placeholder="Repita su contraseña">
+
+        <!-- Opción de selección de tipo de usuario -->
+        <select class="controls" name="tipo_usuario" id="tipo_usuario">
+            <option value="usuario">Registrarse como Usuario</option>
+            <option value="administrador">Registrarse como Administrador</option>
+        </select>
+
+
+        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+        <input class="botons" type="submit" value="Registrar">
+        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
